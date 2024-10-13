@@ -8,20 +8,22 @@ import Features from '../Components/(6)Features'
 import Values from '../Components/(7)Values'
 import Testimonials from '../Components/(8)Testimonials'
 import Footer from '../Components/(9)Footer'
+import './Zpages.css'
 
 const Home = () => {
   return (
-    <>
-    <NavBar/>
-    <Hero/>
-    <Services/>
-    <About/>
-    <Partners/>
-    <Features/>
-    <Values/>
-    <Testimonials/>
-    <Footer/>
-    </>
+    <div className='home-page'>
+      <div className='grad'></div>
+        <NavBar/>
+        <Hero/>
+        <Services/>
+        <About/>
+        <Partners/>
+        <Features/>
+        <Values/>
+        <Testimonials/>
+        <Footer/>
+    </div>
   )
 }
 
