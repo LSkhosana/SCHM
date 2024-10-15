@@ -22,7 +22,6 @@ const About = () => {
             and effectively.
           </p>
 
-          <button id='start2'>Explore Now</button>
 
         </div>
       </div>

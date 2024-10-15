@@ -17,7 +17,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: -60px;
 }
 
 .about-text h4{
@@ -42,14 +41,6 @@
 
 }
 
-#start2{
-    width: 180px ;
-    height: 60px;
-    background-color: transparent;
-    border: 1px solid white ;
-    color: white;
-    font-size: 18px;
-    margin-top: 50px;
-}
+
 
 
