@@ -1,6 +1,6 @@
 import React from 'react'
 import NavBar from '../Components/(1)NavBar'
-// import Hero from '../Components/(2)Hero'
+import Hero from '../Components/(2)Hero'
 import Services from '../Components/(3)Services'
 import About from '../Components/(4)About'
 import Partners from '../Components/(5)Partners'
@@ -15,7 +15,7 @@ const Home = () => {
     <div className='home-page'>
       <div className='grad'></div>
         <NavBar/>
-        {/* <Hero/> */}
+        <Hero/>
         <Services/>
         <About/>
         <Partners/>
