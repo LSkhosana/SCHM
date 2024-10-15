@@ -23,7 +23,6 @@ letter-spacing: 2px;
 color: white;
 font-size: 60px;
 font-weight: 400;
-word-spacing: 5px;
 margin-top: 10px;
 margin-bottom: 25px;
 
@@ -32,4 +31,226 @@ margin-bottom: 25px;
 .service-title p{
 color: rgba(118, 119, 153, 1);
 font-size: 18px;
+margin-bottom: 100px;
+}
+
+
+.service-grid{
+    display: grid;
+    grid-template-columns: 420px 420px 420px ;
+    justify-content: center;
+}
+.box{
+    background-color: transparent;
+    height: 300px;
+    border-bottom: 1px solid rgba(0, 174, 255, 1);
+    border-left: 1px solid rgba(0, 174, 255, 1);
+    padding: 0px 10px 0px 10px;
+
+
+}
+
+#box1{
+    border-left: transparent;
+}
+
+#box4{
+    border-bottom: transparent;
+    border-left: transparent;
+
+}
+#box5{
+    border-bottom: transparent;
+
+}
+#box6{
+    border-bottom: transparent;
+
+}
+
+
+.box h4{
+    color: white;
+    font-weight: bold;
+    font-size: 21px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.box p{
+    color: rgba(118, 119, 153, 1);
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box img{
+    margin-top: 40px;
+}
+
+@media (max-width: 1300px) {
+    .service-grid{
+        display: grid;
+        grid-template-columns: 380px 380px 380px ;
+    }
+    .box{
+        background-color: transparent;
+        height: 300px;
+        border-bottom: 1px solid rgba(0, 174, 255, 1);
+        border-left: 1px solid rgba(0, 174, 255, 1);
+        padding: 0px 10px 0px 10px;
+    
+    
+    }
+    .box h4{
+        color: white;
+        font-weight: bold;
+        font-size: 19px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .box p{
+        font-size: 14px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    
+    }
+    
+    .box img{
+        margin-top: 40px;
+        width: 40px;
+    }
+
+    .service-title h2{
+        font-size: 44px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .service-title p{
+        font-size: 16px;
+    }
+    .service-title h4{
+        font-size: 18px;
+    }
+        
+}
+
+@media (max-width: 1160px) {
+    .service-grid{
+        display: grid;
+        grid-template-columns: 380px 380px ;
+    }
+    #box1{
+        border-left: transparent;
+    }
+    #box2{
+    
+    }
+    #box3{
+        border-left: transparent;
+
+    }
+    #box4{
+        border-bottom: 1px solid rgba(0, 174, 255, 1);
+        border-left: 1px solid rgba(0, 174, 255, 1);
+    }
+    #box5{
+        border-left: transparent;
+        border-bottom: transparent;
+
+    }
+    #box6{
+        border-bottom: transparent;
+
+    }
+    .service-title h2{
+        font-size: 44px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .service-title p{
+        font-size: 16px;
+    }
+    .service-title h4{
+        font-size: 18px;
+    }
+
+    /* 1px solid rgba(0, 174, 255, 1) */
+}
+
+@media (max-width: 800px) {
+    .service-grid{
+        display: grid;
+        grid-template-columns: 380px ;
+    }
+    #box1{
+        display: none;
+    }
+    #box2{
+        border-top: 1px solid rgba(0, 174, 255, 1);
+
+    }
+    #box3{
+        border-right: 1px solid rgba(0, 174, 255, 1);
+
+    }
+    #box4{
+        border-bottom: 1px solid rgba(0, 174, 255, 1);
+        border-left: 1px solid rgba(0, 174, 255, 1);
+    }
+    #box5{
+        border-right: 1px solid rgba(0, 174, 255, 1);
+        border-bottom: 1px solid rgba(0, 174, 255, 1);
+
+    }
+    #box6{
+        border-bottom: transparent;
+
+    }
+    .service-title h2{
+        text-align: center;
+    }
+
+    .service-title p{
+        text-align: center;
+    }
+    .service-title h4{
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-grid{
+        display: grid;
+        grid-template-columns: 350px ;
+    }
+    .service-title h2{
+        font-size: 29px;
+        text-align: center;
+    }
+
+    .service-title p{
+        font-size: 15px;
+        text-align: center;
+    }
+    .service-title h4{
+        font-size: 16px;
+        text-align: center;
+    }
 }
