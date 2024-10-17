@@ -11,7 +11,8 @@ function App() {
         <Route path="/pricing" element={<Pricing/>}/>
         <Route path="/payment" element={<Payment/>}/>
       </Routes>
-  </BrowserRouter>  );
+  </BrowserRouter>  
+  );
 }
 
 export default App;

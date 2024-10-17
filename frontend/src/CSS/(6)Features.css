@@ -71,3 +71,79 @@
 }
 
 
+@media (max-width: 1280px) {
+    .feature-cards{
+        display: grid;
+        grid-template-columns: 324px 324px 324px ;
+        gap: 50px ;
+        justify-content: center;
+    }
+    .feature-card{
+        background-color: transparent;
+        height: 405px;
+        padding: 10px 20px 10px 20px;
+    }
+    #num{
+        font-size: 28px;
+    }
+    .items{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .items img{
+        width: 60px;
+    }
+    .items h3{
+        font-size: 28px;
+    }
+    .items p{
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    .feature-cards{
+        display: grid;
+        grid-template-columns: 324px 324px ;
+        gap: 50px ;
+        justify-content: center;
+    }
+
+    .features-head h2{
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+    
+    .features-head p{
+        font-size: 17px;
+        max-width: 920px;
+    }
+    
+}
+
+@media (max-width: 750px) {
+    .feature-cards {
+        display: grid;
+        grid-template-columns: 324px;
+        gap: 50px;
+        justify-items: center; /* Centers grid items */
+        justify-content: center; /* Centers the entire grid */
+        align-items: center;
+    }
+    .features-head h2{
+        
+        font-size: 50px;
+        margin-bottom: 25px;
+    }
+    
+    .features-head p{
+        font-size: 16px;
+        max-width: 920px;
+    }    
+    
+}

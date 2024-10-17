@@ -8,7 +8,7 @@ const Hero = () => {
     <section className='hero'>
         <div className='hero-container'>
             <div className='hero-text'>
-                <h1 className='hero-title'>live and <br/>on-demand training</h1>
+                <h1 className='hero-title'>live and <br className="hide-br"/> on-demand training</h1>
                 <p className='hero-subtitle'>
                     SCHMFOREX provides access to high-quality education,
                     personalized training, and dedicated customer support, 

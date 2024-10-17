@@ -8,9 +8,14 @@
 .hero{
     padding: 0px 80px 0px 80px ;
 }
+
 .hero-container{
     display: flex;
 }
+.hero-text{
+    width: 100%;
+}
+
 
 .hero-title{
     font-size:80px ;
@@ -37,4 +42,127 @@
 
 .phone img{
     margin-top: -60px;
+}
+
+@media screen and (max-width: 1400px) {
+    .phone img{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .phone img{
+        width: 550px;
+    }
+
+    .hero-title{
+        font-size:60px ;
+        color: white;
+        font-weight: 400;
+    }
+
+    .hero-subtitle{
+        font-size: 14px;
+        color: rgba(118, 119, 153, 1);
+        width: 450px;
+        margin-top: 0;
+    }
+
+    #start{
+        width: 160px ;
+        height: 54px;
+        font-size: 16px;
+        margin-top: 40px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .hero-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #start{
+        margin-bottom: 120px;
+    }
+    .hero-img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: radial-gradient(circle at 50% 45%, #001361 20%, #2f76ad00 50%);
+
+    }
+
+    .phone img{
+        margin-right:50px ;
+        width: 600px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .hero{
+        padding: 0px 60px 0px 60px ;
+    }
+    .phone img{
+        width: 450px;
+    }
+    .hero-title{
+        font-size:50px ;
+        color: white;
+        font-weight: 400;
+    }
+
+    .hero-subtitle{
+        font-size: 14px;
+        color: rgba(118, 119, 153, 1);
+        width: 400px;
+        margin-top: 0;
+    }
+
+    #start{
+        width: 160px ;
+        height: 54px;
+        font-size: 16px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero{
+        padding: 0px 60px 0px 60px ;
+    }
+
+    .hero-title{
+        font-size:45px ;
+        color: white;
+        font-weight: 400;
+    }
+
+    .hero-subtitle{
+        font-size: 14px;
+        color: rgba(118, 119, 153, 1);
+        width: 350px;
+        margin-top: 0;
+    }
+
+    #start{
+        width: 160px ;
+        height: 54px;
+        font-size: 16px;
+        margin-top: 40px;
+    }
+    .phone img{
+        margin-right: 25px;
+        width: 420px;
+    }
+
+    .hero-img{
+        background: radial-gradient(circle at 50% 40%, #001361 20%, #2f76ad00 60%);
+
+    }
+
+
 }
