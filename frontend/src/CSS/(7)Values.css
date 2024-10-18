@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&display=swap");
+
+* {
+    font-family: "Plus Jakarta Sans", sans-serif; /* Apply it globally */
+}
+
 .values{
     padding: 180px 80px 0px 80px ;
 
@@ -9,8 +15,6 @@
 
 .values-text{
     min-width: 585px;
-   
-    
 }
 
 .values-text h4{
@@ -53,4 +57,128 @@
 }
 
 .values-img img{
+}
+
+#start3{
+    width: 180px ;
+    height: 60px;
+    background-color: transparent;
+    border: 1px solid white ;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+
+/* For devices with a max width of 1200px */
+@media (max-width: 1280px) {
+    .values {
+        padding: 150px 40px 0px 40px;
+    }
+    
+    .values-text {
+        min-width: 500px;
+    }
+    .values-text h4{
+        font-size: 18px; 
+    }
+
+    
+    .values-text h2 {
+        font-size: 37px;
+    }
+    
+    .para p {
+        max-width: 500px;
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    .para h5 {
+        font-size: 14px;
+
+    }
+
+
+    .values-img img{
+        width: 430px;
+    }
+    #start3{
+        width: 160px ;
+        height: 50px;
+        font-size: 16px;
+    }
+}
+
+/* For devices with a max width of 992px */
+@media (max-width: 992px) {
+    .values {
+        padding: 120px 30px 0px 30px;
+    }
+    
+    .values-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .values-text {
+        text-align: center;
+        min-width: unset;
+        margin-bottom: 40px;
+    }
+
+    .values-text h2 {
+        font-size: 45px;
+    }
+
+    .para h5,
+    .para p {
+        text-align: center;
+    }
+    
+    .para p {
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+    .values-img{
+        background: radial-gradient(circle at 50% 50%, #001d8f 30%, #2f76ad00 65%);
+    }
+}
+
+/* For devices with a max width of 768px */
+@media (max-width: 768px) {
+    .values {
+        padding: 100px 20px 0px 20px;
+    }
+
+    .values-text h2 {
+        font-size: 40px;
+    }
+
+    .para p {
+        font-size: 15px;
+    }
+}
+
+/* For devices with a max width of 576px */
+@media (max-width: 576px) {
+    .values {
+        padding: 80px 10px 0px 10px;
+    }
+
+    .values-text h2 {
+        font-size: 35px;
+    }
+
+    .para p {
+        font-size: 14px;
+    }
+
+    .values-img {
+        padding: 20px;
+    }
+    
+    .values-img img {
+        width: 100%;
+    }
 }

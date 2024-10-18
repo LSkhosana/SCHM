@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&display=swap");
+
+* {
+    font-family: "Plus Jakarta Sans", sans-serif; /* Apply it globally */
+}
+
+.footer-container{
+background-color: rgba(15, 43, 99, 1);
+width: 100%;
+min-height: 120px;
+display: flex;
+align-items: center;
+
+}
+.footer-icons{
+    display: flex;
+    align-items: flex-end;  
+    justify-content: flex-end;  
+}
+
+.footer-text{
+    width: 100%;
+}
+.footer-text p{
+    color: white;
+    margin-left: 20px;
+}
+
+
+.footer-icons a {
+    margin-right: 15px; /* Adds space between icons */
+    text-decoration: none;
+}
+
+.social-icon {
+    color: #fff; /* Set icon color to white */
+    font-size: 24px; /* Adjust size of the icons */
+    transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+#i1 :hover{
+    color: rgb(0, 4, 255); /* Optional: Change color on hover (light gray) */
+}
+
+#i2 :hover{
+    color: rgb(0, 110, 255); /* Optional: Change color on hover (light gray) */
+}
+#i3 :hover{
+    color: rgb(255, 0, 115); /* Optional: Change color on hover (light gray) */
+}
+#i4 :hover{
+    color: rgb(0, 125, 214); /* Optional: Change color on hover (light gray) */
+}

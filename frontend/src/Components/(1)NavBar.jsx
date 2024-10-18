@@ -1,6 +1,8 @@
 import '../CSS/(1)NavBar.css'
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import logo from '../Assets/logo.png'
 
@@ -22,8 +24,10 @@ function Navbar() {
                     <a href="/#h5">About</a>
                     <a href="/#serv">Services</a>
                     <a href="/contact">Shop</a>
-                    <a href="/">Log in</a>
-                    <Link to="/" className="sign-in-link">Sign in</Link>
+                    <a href="/">
+                    Offers <FontAwesomeIcon icon={faDownload} style={{ marginLeft: '5px' }} />
+                    </a>                    
+                    <Link to="/" className="sign-in-link">Contact</Link>
                 </div>
                 <button
                     className="nav-btn nav-close-btn"
@@ -36,11 +40,13 @@ function Navbar() {
                 onClick={showNavbar}>
                 <FaBars />
             </button>
-            <div className='log-in desktop-only'>
-                <a href="/">Log in</a>
+            <div className="log-in desktop-only">
+            <a href="/offers.pdf" download>
+                Offers <FontAwesomeIcon icon={faDownload} style={{ marginLeft: '5px' }} />
+            </a>
                 <button className="add-btn">
                     <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
-                        Sign in
+                        Contact
                     </Link>
                 </button>
             </div>

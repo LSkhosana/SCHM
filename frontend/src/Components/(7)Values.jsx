@@ -36,7 +36,7 @@ const Values = () => {
             creating a supportive community where members feel connected and valued.            
             </p>
           </div>
-          <button id='start2'>Learn More</button>
+          <button id='start3'>Learn More</button>
         </div>
       </div>
     </section>

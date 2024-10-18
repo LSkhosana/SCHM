@@ -1,7 +1,7 @@
 import {BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Pricing from "./Pages/Pricing";
-import Payment from "./Pages/Payment";
+import Contact from "./Pages/Contact";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/pricing" element={<Pricing/>}/>
-        <Route path="/payment" element={<Payment/>}/>
+        <Route path="/payment" element={<Contact/>}/>
       </Routes>
   </BrowserRouter>  
   );

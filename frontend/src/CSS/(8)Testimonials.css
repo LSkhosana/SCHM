@@ -1,5 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&display=swap");
+
+* {
+    font-family: "Plus Jakarta Sans", sans-serif; /* Apply it globally */
+}
+
 .testimonial{
-    padding: 180px 0px 0px 120px ;
+    padding: 180px 0px 150px 120px ;
 
 }
 

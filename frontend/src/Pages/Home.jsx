@@ -5,9 +5,10 @@ import Services from '../Components/(3)Services'
 import About from '../Components/(4)About'
 import Partners from '../Components/(5)Partners'
 import Features from '../Components/(6)Features'
-// import Values from '../Components/(7)Values'
+import Values from '../Components/(7)Values'
 import Testimonials from '../Components/(8)Testimonials'
-// import Footer from '../Components/(9)Footer'
+import Footer from '../Components/(9)Footer'
+import Map from '../Components/(10)Map'
 import './Zpages.css'
 
 const Home = () => {
@@ -20,9 +21,10 @@ const Home = () => {
         <About/>
         <Partners/>
         <Features/>
-        {/*<Values/>*/}
+        <Values/>
         <Testimonials/>
-        {/*<Footer/> */}
+        <Map/>
+        <Footer/>
     </div>
   )
 }
