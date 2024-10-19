@@ -24,10 +24,10 @@ function Navbar() {
                     <a href="#serv">Services</a>
                     <a href="#about">About Us</a>
                     <a href="/">Shop</a>
-                    <a href="/">
+                    <a href="/offers.pdf" download>
                     Offers <FontAwesomeIcon icon={faDownload} style={{ marginLeft: '5px' }} />
                     </a>                    
-                    <Link to="/" className="sign-in-link">Contact</Link>
+                    <Link to="/contact" className="sign-in-link">Contact</Link>
                 </div>
                 <button
                     className="nav-btn nav-close-btn"
