@@ -163,7 +163,7 @@
 /* For devices with a max width of 576px */
 @media (max-width: 576px) {
     .values {
-        padding: 80px 10px 0px 10px;
+        padding: 80px 50px 0px 50px;
     }
 
     .values-text h2 {
@@ -172,6 +172,10 @@
 
     .para p {
         font-size: 14px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .values-img {

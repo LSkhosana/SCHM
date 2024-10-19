@@ -67,7 +67,8 @@ align-items: center;
     }
     .footer-text p{
         color: white;
-        margin-left: 20px;
+        margin-left: 0px;
+        font-size: 10px;
         width: 100%;
         display: flex;
         justify-content: center;
