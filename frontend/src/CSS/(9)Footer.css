@@ -4,6 +4,7 @@
     font-family: "Plus Jakarta Sans", sans-serif; /* Apply it globally */
 }
 
+
 .footer-container{
 background-color: rgba(15, 43, 99, 1);
 width: 100%;
@@ -34,7 +35,7 @@ align-items: center;
 
 .social-icon {
     color: #fff; /* Set icon color to white */
-    font-size: 24px; /* Adjust size of the icons */
+    font-size: 18px; /* Adjust size of the icons */
     transition: color 0.3s ease; /* Smooth transition for hover */
 }
 
@@ -50,4 +51,29 @@ align-items: center;
 }
 #i4 :hover{
     color: rgb(0, 125, 214); /* Optional: Change color on hover (light gray) */
+}
+
+@media (max-width: 700px) {
+    .footer-text p{
+        max-width: 500px;
+        margin-left: 0;
+    }
+    .social-icon{
+        font-size: 18px;
+    }
+    .footer-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .footer-text p{
+        color: white;
+        margin-left: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
 }

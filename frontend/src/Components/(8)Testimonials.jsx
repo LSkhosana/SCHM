@@ -11,7 +11,7 @@ const Testimonials = () => {
         <h2><span style={{color: 'rgba(0, 174, 255, 1)'}}>&ldquo;</span>Testimonials<span style={{color: 'rgba(0, 174, 255, 1)'}}>&rdquo;</span></h2>
           <div className='testimonial-text'>
             <div className='p1'>
-              <p>Lorem ipsum dolor sit amet. Qui consequatur sint 33 voluptatem officia et sint laboriosam sed ipsa sint ut voluptatum labore et.</p>
+              <p>Hear from Our Satisfied Clients: Real Stories of Success, Growth, and Confidence in Our Proven Trading Strategies</p>
             </div>
             <div className='slide'>
               <div className='slide1'><FaArrowLeft /></div>

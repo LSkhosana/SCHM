@@ -10,7 +10,7 @@ const Features = () => {
       <div className='features-container'>
         <div className='features-head'>
           <h2>Additional Services</h2>
-          <p>Lorem ipsum dolor sit amet. Qui consequatur sint 33 voluptatem officia et sint laboriosam sed ipsa sint ut voluptatum labore et possimus voluptas.</p>
+          <p>Get exclusive access to all of  our services including Daily Trading Rooms market analysis and trading systems all tailored to help you maximize your success. </p>
         </div>
         <div className='feature-cards'>
           <div className='feature-card'>

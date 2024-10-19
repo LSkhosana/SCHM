@@ -6,7 +6,8 @@
 
 
 .form{
-    padding: 0px 0px 10px 0px;
+    padding: 60px 0px 120px 10px;
+    background: radial-gradient(100% 300px at 50% 100%, #001361 0%, #2f76ad00 60%);
 }
 
 
@@ -19,8 +20,7 @@
 .form-group{
     min-width: 600px;
     height:754px ;
-    background-color: rgba(255, 255, 255, 0);
-    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.059);
 
 }
 
@@ -37,6 +37,7 @@
     text-align: left; /* Ensures the label is left-aligned */
     margin-bottom: 10px;
     margin-top: 20px;
+    color: white;
   }
   
   .form-control {
@@ -47,9 +48,12 @@
     width: 500px; /* Sets a fixed width for the input */
     padding: 5px;
     transition: border-color 0.3s ease; /* Smooth transition for hover effect */
-    margin-bottom: 0px;
+    margin-bottom: 20px;
   }
   
+  ::placeholder{
+    color: rgb(163, 162, 162);
+  }
   
   textarea{
     width: 500px;

@@ -6,6 +6,8 @@
 
 .testimonial{
     padding: 180px 0px 150px 120px ;
+    background: radial-gradient(100% 300px at 50% 100%, #001361 0%, #2f76ad00 60%);
+    height: 900px;
 
 }
 
@@ -133,6 +135,7 @@
 @media (max-width: 500px) {
     .testimonial{
         padding: 180px 0px 0px 60px ;
+
     
     }
     .testimonial-head h2{

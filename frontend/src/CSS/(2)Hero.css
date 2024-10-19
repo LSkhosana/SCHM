@@ -4,44 +4,113 @@
     font-family: "Plus Jakarta Sans", sans-serif; /* Apply it globally */
 }
 
-
-.hero{
-    padding: 0px 80px 0px 80px ;
+.hero {
+    padding: 0px 80px 0px 80px;
+    animation: fadeInUp 1s ease-out; /* Fade in effect */
 }
 
-.hero-container{
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-container {
     display: flex;
+    animation: slideIn 1s ease-out; /* Slide in animation */
 }
-.hero-text{
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.hero-text {
     width: 100%;
+    animation: fadeIn 1.2s ease-out;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
-.hero-title{
-    font-size:80px ;
+.hero-title {
+    font-size: 80px;
     color: white;
     font-weight: 400;
-    
+    transition: transform 0.3s ease; /* Subtle hover effect */
 }
 
-.hero-subtitle{
+.hero-title:hover {
+    transform: scale(1.05); /* Slight scale on hover */
+}
+
+.hero-subtitle {
     font-size: 16px;
     color: rgba(118, 119, 153, 1);
     width: 550px;
+    animation: fadeInRight 1.5s ease-out;
 }
 
-#start{
-    width: 180px ;
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#start {
+    width: 180px;
     height: 60px;
     background-color: transparent;
-    border: 1px solid white ;
+    border: 1px solid white;
     color: white;
     font-size: 18px;
     margin-top: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
-.phone img{
+#start:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05); /* Scale on hover */
+}
+
+.phone img {
     margin-top: -60px;
+    animation: float 3s ease-in-out infinite; /* Floating animation */
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 @media screen and (max-width: 1400px) {

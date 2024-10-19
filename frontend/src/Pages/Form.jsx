@@ -14,9 +14,10 @@ const Form = () => {
         <div className='form-text'>
           <h2>Fill In Your Details And Recieve An Exclusive Guide  On ...</h2>
           <div className='contact-info'>
-            <p><BsEnvelope />kms@mocaby.co.za</p>
-            <p><BsPhone /> +27-64-801-6144</p>
-            <p><BsGeoAlt /> 173 Oxford Road, Rosebank, Gauteng, 2196</p>
+            <p><BsEnvelope />schmefore@gmail.com</p>
+            <p><BsPhone /> 068 017 5758</p>
+            <p><BsGeoAlt />114 Dennis Road, Atholl, Sandton, 2196
+            </p>
 
           <div>
             <div className='socials'>

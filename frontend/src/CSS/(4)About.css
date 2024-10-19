@@ -4,48 +4,110 @@
     font-family: "Plus Jakarta Sans", sans-serif; /* Apply it globally */
 }
 
-.about{
-    padding: 180px 80px 0px 80px ;
-
+.about {
+    padding: 180px 80px 0px 80px;
+    animation: fadeInUp 1s ease-out; /* Fading effect when section appears */
 }
-.about-container{
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-container {
     display: flex;
+    animation: fadeInLeft 1.2s ease-out; /* Sliding effect for the container */
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .about-image {
     background: radial-gradient(circle at 50% 50%, #001361 20%, #2f76ad00 70%);
     display: inline-block;
     height: 100%;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.about-text{
+.about-image:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.about-text {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    animation: fadeInRight 1.4s ease-out; /* Sliding effect for text */
 }
 
-.about-text h4{
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.about-text h4 {
     color: rgba(0, 174, 255, 1);
     margin-bottom: 0;
     font-size: 20px;
     font-weight: 400;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
 }
 
-.about-text h2{
+.about-text h4:hover {
+    color: rgba(0, 174, 255, 0.8); /* Slight color change on hover */
+}
+
+.about-text h2 {
     color: white;
     font-size: 60px;
     font-weight: 300;
     margin-top: 10px;
     margin-bottom: 60px;
+    transition: color 0.3s ease;
 }
 
-.about-text p{
+.about-text h2:hover {
+    color: rgba(0, 174, 255, 1); /* Change heading color on hover */
+}
+
+.about-text p {
     color: rgba(118, 119, 153, 1);
     font-size: 18px;
     margin-bottom: 60px;
-
+    animation: fadeIn 1.6s ease-out; /* Fading effect for paragraph */
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 
 @media (max-width: 1280px) {
     .about-image img{

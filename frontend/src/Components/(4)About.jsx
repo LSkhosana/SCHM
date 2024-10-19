@@ -4,8 +4,9 @@ import cell from '../Assets/Frame 446.png'
 import '../CSS/(4)About.css'
 
 const About = () => {
+  
   return (
-    <section className='about'>
+    <section id='about'className='about'>
       <div className='about-container'>
         <div className='about-image'>
           <img src={cell} alt='cell' />

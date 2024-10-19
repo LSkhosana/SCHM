@@ -4,105 +4,180 @@
     font-family: "Plus Jakarta Sans", sans-serif; /* Apply it globally */
 }
 
-.service{
-    padding: 150px 80px 0px 80px ;
-
+.service {
+    padding: 150px 80px 0px 80px;
+    animation: fadeInUp 1s ease-out;
 }
 
-.service-title{
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.service-title {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    animation: fadeIn 1.2s ease-out;
 }
 
-.service-title h4{
-color: rgba(0, 174, 255, 1);
-margin-bottom: 0;
-font-size: 20px;
-font-weight: 400;
-letter-spacing: 2px;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-.service-title h2{
-color: white;
-font-size: 60px;
-font-weight: 400;
-margin-top: 10px;
-margin-bottom: 25px;
-
+.service-title h4 {
+    color: rgba(0, 174, 255, 1);
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: transform 0.3s ease;
 }
 
-.service-title p{
-color: rgba(118, 119, 153, 1);
-font-size: 18px;
-margin-bottom: 180px;
+.service-title h4:hover {
+    transform: scale(1.05);
 }
 
+.service-title h2 {
+    color: white;
+    font-size: 60px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    transition: color 0.3s ease;
+}
 
-.service-grid{
+.service-title h2:hover {
+    color: rgba(0, 174, 255, 1); /* Changes text color on hover */
+}
+
+.service-title p {
+    color: rgba(118, 119, 153, 1);
+    font-size: 18px;
+    margin-bottom: 180px;
+    animation: fadeInRight 1.5s ease-out;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.service-grid {
     display: grid;
-    grid-template-columns: 420px 420px 420px ;
+    grid-template-columns: 420px 420px 420px;
     justify-content: center;
+    animation: fadeInUp 1s ease-out;
 }
-.box{
+
+.box {
     background-color: transparent;
     height: 300px;
     border-bottom: 1px solid rgba(0, 174, 255, 1);
     border-left: 1px solid rgba(0, 174, 255, 1);
     padding: 0px 10px 0px 10px;
-
-
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-#box1{
+.box:hover {
+    transform: translateY(-5px); /* Lifts the box slightly */
+    background-color: rgba(0, 174, 255, 0.015); /* Adds a background color on hover */
+}
+
+#box1 {
     border-left: transparent;
 }
 
-#box4{
+#box4 {
     border-bottom: transparent;
     border-left: transparent;
-
 }
-#box5{
+
+#box5 {
     border-bottom: transparent;
-
 }
-#box6{
+
+#box6 {
     border-bottom: transparent;
-
 }
 
-
-.box h4{
+.box h4 {
     color: white;
     font-weight: bold;
     font-size: 21px;
     width: 100%;
     display: flex;
     justify-content: center;
+    transition: color 0.3s ease;
 }
 
-.box p{
+.box h4:hover {
+    color: rgba(0, 174, 255, 1); /* Change text color on hover */
+}
+
+.box p {
     color: rgba(118, 119, 153, 1);
     font-size: 16px;
     width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
-
+    animation: fadeInDown 1.5s ease-out;
 }
 
-.i{
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.i {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.box img{
+.box img {
     margin-top: 40px;
+    animation: float 3s ease-in-out infinite; /* Adds a floating effect to images */
 }
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 
 @media (max-width: 1300px) {
     .service-grid{

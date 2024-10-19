@@ -9,12 +9,12 @@ import stock from '../Assets/stock.png'
 
 const Services = () => {
   return (
-    <section className='service'>
+    <section  className='service'>
         <div className="service-container">
             <div className='service-title'>
-                <h4>Services</h4>
+                <h4 id='#serv'>Services</h4>
                 <h2>Trade bigger and get paid faster.</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipis elit</p>
+                <p>Start earning today with our proven trading strategy, designed to help you achieve consistent success in the markets</p>
             </div>
             <div className="service-grid">
                 <div className="box" id='box1'>

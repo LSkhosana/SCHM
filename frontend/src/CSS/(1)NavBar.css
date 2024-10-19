@@ -182,6 +182,11 @@ nav {
     nav .links .sign-in-link:hover {
         background-color: #f5d070;
     }
+    #logo {
+        height: 100px; /* Set the logo size */
+        margin-top: 20px;
+        margin-right: -90px;
+    }
 }
 
 @media screen and (min-width: 769px) {

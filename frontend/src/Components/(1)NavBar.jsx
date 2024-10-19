@@ -21,9 +21,9 @@ function Navbar() {
             <nav ref={navRef}>
                 <div className="links">
                     <a id='h'href="/">Home</a>
-                    <a href="/#h5">About</a>
-                    <a href="/#serv">Services</a>
-                    <a href="/contact">Shop</a>
+                    <a href="#serv">Services</a>
+                    <a href="#about">About Us</a>
+                    <a href="/">Shop</a>
                     <a href="/">
                     Offers <FontAwesomeIcon icon={faDownload} style={{ marginLeft: '5px' }} />
                     </a>                    
@@ -45,7 +45,7 @@ function Navbar() {
                 Offers <FontAwesomeIcon icon={faDownload} style={{ marginLeft: '5px' }} />
             </a>
                 <button className="add-btn">
-                    <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <Link to="/contact" style={{ textDecoration: 'none', color: 'inherit' }}>
                         Contact
                     </Link>
                 </button>
